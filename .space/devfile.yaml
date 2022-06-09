@@ -1,0 +1,16 @@
+schemaVersion: 2.2.0
+metadata:
+  name: 'My custom config'
+attributes:
+  space:
+    editor:
+      type: Idea
+components:
+  - name: image-build
+    image:
+      imageName: my-image:latest
+      dockerfile:
+        uri: Dockerfile
+      
+
+
