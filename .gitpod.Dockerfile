@@ -2,7 +2,7 @@
 FROM gitpod/workspace-full:2022-09-11-15-11-40
 
 # BAZELISK
-RUN  curl -LO "https://github.com/bazelbuild/bazelisk/releases/download/v1.10.1/bazelisk-linux-amd64" \
+RUN sudo curl -LO "https://github.com/bazelbuild/bazelisk/releases/download/v1.10.1/bazelisk-linux-amd64" \
      && mv bazelisk-linux-amd64 /usr/bin/bazel \
      && chmod +x /usr/bin/bazel \
      && mkdir /bazelisk \
