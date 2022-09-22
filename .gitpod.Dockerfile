@@ -1,5 +1,5 @@
 # Build latest ubuntu with python and clang
-FROM python:3.9-bullseye as clang
+FROM gitpod/workspace-full:2022-09-11-15-11-40
 
 # Install dependencies
 RUN apt-get -qq update && \
