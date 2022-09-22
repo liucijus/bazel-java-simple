@@ -8,7 +8,5 @@ RUN sudo curl -LO "https://github.com/bazelbuild/bazelisk/releases/download/v1.1
      && sudo mkdir /bazelisk \
      && sudo chmod 775 /bazelisk
 
-ENV BAZELISK_HOME=/bazelisk 
-
 # # Pre-download multiple Bazel versions for efficiency 
 RUN USE_BAZEL_VERSION=5.2.0 bazel version
