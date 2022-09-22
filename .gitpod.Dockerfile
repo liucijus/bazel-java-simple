@@ -10,9 +10,6 @@ RUN apt-get -qq update && \
         dirmngr gnupg2 lbzip2 wget xz-utils libtinfo5 && \
     rm -rf /var/lib/apt/lists/*
 
-# Build Bazel base image
-FROM clang
-
 # Install dependencies
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
